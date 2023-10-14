@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route("/webhooks/inbound-message", methods=["POST"])
 def inbound_message():
     data = request.get_json()
-    pprint(data)
+    print(data)
     return "200"
 
 
